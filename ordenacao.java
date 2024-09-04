@@ -1,9 +1,9 @@
-package TrabalhoAvaliativo;
+package Trabalho1;
 
 import java.util.Collections;
 import java.util.List;
 
-public class Ordenacoes {
+public class ordenacao {
 
     // Ordenação Bolha
     public static void bolhaSort(List<Aluno> alunos) {
