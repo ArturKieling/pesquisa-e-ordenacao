@@ -1,29 +1,29 @@
-package TrabalhoAvaliativo;
+package Trabalho1;
 
 import java.util.*;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         List<Aluno> alunos = gerarAlunos(60000);
 
         List<Aluno> alunosSort = new ArrayList<>(alunos);
-        Collections.sort(alunosSort, new AlunoComparator());
+        Collections.sort(alunosSort, new Alunocomparacao());
         System.out.println("\nOrdenado com Collections.sort:");
         imprimirLista(alunosSort);
 
         List<Aluno> alunosBolha = new ArrayList<>(alunos);
-        Ordenacoes.bolhaSort(alunosBolha);
+        ordenacao.bolhaSort(alunosBolha);
         System.out.println("\nOrdenado com o método Bolha:");
         imprimirLista(alunosBolha);
 
         List<Aluno> alunosSelecao = new ArrayList<>(alunos);
-        Ordenacoes.selecaoSort(alunosSelecao);
+        ordenacao.selecaoSort(alunosSelecao);
         System.out.println("\nOrdenado com o método Seleção:");
         imprimirLista(alunosSelecao);
 
         List<Aluno> alunosInsercao = new ArrayList<>(alunos);
-        Ordenacoes.insercaoSort(alunosInsercao);
+        ordenacao.insercaoSort(alunosInsercao);
         System.out.println("\nOrdenado com o método Inserção:");
         imprimirLista(alunosInsercao);
     }
