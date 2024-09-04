@@ -1,4 +1,4 @@
-package TrabalhoAvaliativo;
+package Trabalho1;
 
 public class Aluno implements Comparable<Aluno> {
     private String nome;
